@@ -33,11 +33,12 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.link-bottom:hover,
-.link-bottom:focus {
-  color: var(--accent-color);
-}
+
 .bottom address {
   font-style: normal;
   font-size: 14px;

@@ -12,9 +12,9 @@
   height: 45px;
   border-color: transparent;
   cursor: pointer;
-}
-.btn:hover,
-.btn:focus {
-  border-color: var(--accent-color);
-  background-color: transparent;
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    background-color: transparent;
+  }
 }

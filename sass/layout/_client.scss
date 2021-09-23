@@ -19,6 +19,15 @@
   /*padding: 16px 32px 16px 32px;*/
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &:hover,
+  &:focus {
+    fill: #2196f3;
+    border: 1px solid rgba(33, 150, 243, 1);
+    /*background-color: blue;*/
+  }
 }
 .client-link {
   width: 100%;
@@ -28,34 +37,25 @@
  justify-content: center;
   background-color: #ffffff;*/
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    /*background-color: #2196f3;*/
+    fill: #2196f3;
+  }
+  &:hover use,
+  &:focus use {
+    /*background-color: #2196f3;*/
+    fill: #2196f3;
+  }
 }
-.client-item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .client-icon {
   margin: 16px 32px 16px 32px;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client-icon:hover,
-.client-icon:focus {
-  fill: #2196f3;
-  /*background-color: blue;*/
-}
-.client-item:hover,
-.client-item:focus {
-  fill: #2196f3;
-  border: 1px solid rgba(33, 150, 243, 1);
-  /*background-color: blue;*/
-}
-.client-link:hover,
-.client-link:focus {
-  /*background-color: #2196f3;*/
-  fill: #2196f3;
-}
-.client-link:hover use,
-.client-link:focus use {
-  /*background-color: #2196f3;*/
-  fill: #2196f3;
+  &:hover,
+  &:focus {
+    fill: #2196f3;
+    /*background-color: blue;*/
+  }
 }

@@ -82,6 +82,13 @@
   position: relative;
   display: block;
   margin-bottom: 10px;
+  &:focus-within > input {
+    outline: none;
+    border: 1px solid rgba(33, 150, 243, 1);
+  }
+  & input:focus {
+    border: 1px solid rgba(33, 150, 243, 1);
+  }
 }
 
 .form-label {
@@ -123,21 +130,13 @@
   width: 20px;
   height: 20px;
   /*background-color: tomato;*/
+  .form-field:focus-within > & {
+    fill: #2196f3;
+    /* background-color: blue;*/
+    /*border: 1px solid rgba(33, 150, 243, 1);*/
+  }
 }
 
-.form-field:focus-within > .icon {
-  fill: #2196f3;
-  /* background-color: blue;*/
-  /*border: 1px solid rgba(33, 150, 243, 1);*/
-}
-
-.form-field:focus-within > input {
-  outline: none;
-  border: 1px solid rgba(33, 150, 243, 1);
-}
-.form-field input:focus {
-  border: 1px solid rgba(33, 150, 243, 1);
-}
 /*.form-field:focus-within > .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
   transform: translateY(-50px);
@@ -187,17 +186,18 @@
   /*border: 2px solid #2a2a2a;*/
   border-radius: 4px;
 
-  transition: transform 250ms linear;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .checkbox:checked + & {
+    transform: scale(1.2);
+    border-color: transparent;
+    background: rgba(33, 150, 243, 1);
+    /*fill: #188ce8;*/
+    background-image: url("./images/icons.svg#icon-icon-check1");
+    background-size: contain;
+    background-origin: border-box;
+  }
 }
-.checkbox:checked + .icon {
-  transform: scale(1.2);
-  border-color: transparent;
-  background: rgba(33, 150, 243, 1);
-  /*fill: #188ce8;*/
-  background-image: url("./images/icons.svg#icon-icon-check1");
-  background-size: contain;
-  background-origin: border-box;
-}
+
 .icon-field {
   display: inline-block;
   width: 15px;
@@ -208,6 +208,17 @@
   border-radius: 4px;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .checkbox:checked + & {
+    transform: scale(1.2);
+    border-color: transparent;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    background: rgba(33, 150, 243, 1);
+    fill: #188ce8;
+    resize: none;
+    background-image: url("./images/icons.svg#icon-icon-check1");
+    background-size: contain;
+    background-origin: border-box;
+  }
 }
 .icon-form-field {
   position: absolute;
@@ -216,17 +227,7 @@
   justify-content:center;
   align-items:flex-start;*/
 }
-.checkbox:checked + .icon-field {
-  transform: scale(1.2);
-  border-color: transparent;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  background: rgba(33, 150, 243, 1);
-  fill: #188ce8;
-  resize: none;
-  background-image: url("./images/icons.svg#icon-icon-check1");
-  background-size: contain;
-  background-origin: border-box;
-}
+
 .form-field-comment {
   width: 450px;
   height: 120px;
@@ -234,15 +235,17 @@
   padding: 10px 20px;
   border-radius: 3px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  &:focus {
+    border: 1px solid rgba(33, 150, 243, 1);
+    outline: none;
+  }
 }
-.form-field-comment:focus {
-  border: 1px solid rgba(33, 150, 243, 1);
-  outline: none;
-}
+
 /*.label {
   margin-left: 30px;
   transition: transform 250ms linear;
 }*/
+
 .icon-field {
   border: 2px solid #2a2a2a;
   width: 15px;
