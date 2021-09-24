@@ -16,7 +16,7 @@
   padding-bottom: 32px;*/
 }
 
-.link-items {
+.nav-link {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -67,7 +67,7 @@
   }
 }
 
-.link-items .current {
+.current {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -95,7 +95,7 @@
   }
 }
 
-.icon-envelope {
+.nav-link__icon-envelope {
   background-color: #ffffff;
   fill: #757575;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -105,7 +105,7 @@
   }
 }
 
-.icon-smartphone {
+.nav-link__icon-smartphone {
   fill: #757575;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
@@ -114,14 +114,14 @@
   }
 }
 
-.nav-item {
+.site-nav__item {
   position: relative;
   .site-nav &:not(:last-child) {
     margin-right: 50px;
   }
 }
 
-.nav-item-link.current {
+.site-nav__current {
   color: var(--accent-color);
   &::after {
     content: "";
