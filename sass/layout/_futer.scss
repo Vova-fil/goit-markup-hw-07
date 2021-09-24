@@ -28,7 +28,7 @@ footer {
   /* align-items: baseline;*/
   /*margin-right: 70px;*/
 }
-.link-bottom {
+.bottom-list__link-bottom {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
@@ -75,7 +75,7 @@ footer {
 
   color: #ffffff;
 }
-.socials-link-futer {
+.masters-socials-futer__link {
   background: rgba(255, 255, 255, 0.1);
 }
 .icons-futer {
@@ -104,40 +104,67 @@ footer {
   padding-bottom: 10px;
 }
 
-.socials-item-futer:not(:last-child) {
-  margin-right: 10px;
+.masters-socials-futer__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .masters-socials-futer {
   margin-left: 0px;
   margin-right: 93px;
 }
-.form-futer-box {
+.form-box {
   display: flex;
   justify-content: flex-end;
 }
-.form-futer-icon {
+.form-box__futer-icon {
   display: flex;
   justify-content: center;
 }
-.form-futer-icon button {
+.form-box__futer-icon button {
   width: 200px;
   height: 50px;
 }
-.botton-futer {
+.form-box__botton-futer {
   /*padding: 10px 28px 10px 29px;*/
   text-align: center;
 }
-.button-futer {
+.form-box__button-futer {
   display: flex;
 }
 .icon-icon-send {
   margin-left: 10px;
 }
-.form-futer-icon input {
+.form-box__futer-icon input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   border-radius: 4px;
   margin-right: 12px;
+}
+.form-box__icons-futer h2 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+.form-box__icons-futer {
+  display: block;
+  display: table-cell;
+  margin-top: 0px;
+  align-content: center;
+  /*display: flex;
+     justify-content: center;
+     align-items: center;
+     display: block;*/
+  /* width: 206px;*/
+  height: 80px;
+  margin-right: 93px;
+  /*margin-left: 70px;*/
 }

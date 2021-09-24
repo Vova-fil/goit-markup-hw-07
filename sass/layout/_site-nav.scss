@@ -7,14 +7,6 @@
 .main-nav {
   display: flex;
   align-items: center;
-  /* width: 1200px;*/
-
-  /*padding-left: 15px;
-  padding-right: 15px;*/
-  /* opacity: 0;
-  transform: scaleX(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 .site-nav {
   position: relative;
@@ -124,7 +116,7 @@
 
 .nav-item {
   position: relative;
-  &:not(:last-child) {
+  .site-nav &:not(:last-child) {
     margin-right: 50px;
   }
 }

@@ -3,14 +3,14 @@
   text-align: center;
 }
 
-.text-benefits-list {
+.benefits-list {
   display: flex;
 
   /*margin-top: 94px;
   margin-bottom: 94px;*/
 }
 
-.text-benefits-text {
+.benefits-list__text {
   &:not(:last-child) {
     margin-right: 32px;
   }
@@ -25,7 +25,7 @@
   letter-spacing: 0.03em;
 }
 
-.text-benefits-icon {
+.benefits-list__icon {
   /*position: absolute;*/
   width: 270px;
   height: 120px;
